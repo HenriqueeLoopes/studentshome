@@ -1,0 +1,54 @@
+.img-container {
+  width: 100vw;
+  height: calc(40vh - 6rem);
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.img-container img {
+    border: 2px solid #FFF;
+    border-radius: 3px;
+    max-width: 95vw;
+}
+
+main {
+    background-color: #FFF;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+main .filters-container {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .filters-container button {
+    text-decoration: none;
+    background-color: transparent;
+    border: 0;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+main .filters-container span {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0 1rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    height: inherit;
+    padding: 2rem 0;
+}

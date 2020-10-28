@@ -1,0 +1,30 @@
+.cards-container .card {
+    margin: 1rem 1rem;
+    width: 25rem;
+    height: 40rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-container .card img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 40%;
+}
+
+.cards-container .card h1 {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cards-container .card span {
+    padding: 0 1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
