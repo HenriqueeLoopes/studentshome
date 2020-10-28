@@ -30,14 +30,46 @@ export default function Accommodations() {
           <span>Faixa Preco:</span>
         </div>
         <div className="cards-container">
-            <AccommodationsCard image={republicaufabcsbc} title="Republica UFABC - SBC" text="Republica localizada proxima a Universidade Federal do ABC - SBC" value={200} link="" />
-            <AccommodationsCard image={republicaufabcsbc} title="Republica UFABC - SBC" text="Republica localizada proxima a Universidade Federal do ABC - SBC" value={200} link="" />
-            <AccommodationsCard image={republicaufabcsbc} title="Republica UFABC - SBC" text="Republica localizada proxima a Universidade Federal do ABC - SBC" value={200} link="" />
-            <AccommodationsCard image={republicaufabcsbc} title="Republica UFABC - SBC" text="Republica localizada proxima a Universidade Federal do ABC - SBC" value={200} link="" />
-            <AccommodationsCard image={republicaufabcsbc} title="Republica UFABC - SBC" text="Republica localizada proxima a Universidade Federal do ABC - SBC" value={200} link="" />
-            <AccommodationsCard image={republicaufabcsbc} title="Republica UFABC - SBC" text="Republica localizada proxima a Universidade Federal do ABC - SBC" value={200} link="" />
-            <AccommodationsCard image={republicaufabcsbc} title="Republica UFABC - SBC" text="Republica localizada proxima a Universidade Federal do ABC - SBC" value={200} link="" />
-
+          <AccommodationsCard
+            image={republicaufabcsbc}
+            title="Republica UFABC - SBC"
+            text="Republica localizada proxima a Universidade Federal do ABC - SBC"
+            value={200}
+            stars={3}
+            link=""
+          />
+          <AccommodationsCard
+            image={republicaufabcsbc}
+            title="Republica UFABC - SBC"
+            text="Republica localizada proxima a Universidade Federal do ABC - SBC"
+            value={200}
+            stars={3}
+            link=""
+          />
+          <AccommodationsCard
+            image={republicaufabcsbc}
+            title="Republica UFABC - SBC"
+            text="Republica localizada proxima a Universidade Federal do ABC - SBC"
+            value={200}
+            stars={3}
+            link=""
+          />
+          <AccommodationsCard
+            image={republicaufabcsbc}
+            title="Republica UFABC - SBC"
+            text="Republica localizada proxima a Universidade Federal do ABC - SBC"
+            value={200}
+            stars={3}
+            link=""
+          />
+          <AccommodationsCard
+            image={republicaufabcsbc}
+            title="Republica UFABC - SBC"
+            text="Republica localizada proxima a Universidade Federal do ABC - SBC"
+            value={200}
+            stars={3}
+            link=""
+          />
         </div>
       </main>
       <Footer />
