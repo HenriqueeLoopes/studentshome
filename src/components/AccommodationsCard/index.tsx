@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
-import "./styles.css";
+import { BottomCardWrapper, ButtonsWrapper, CardWrapper } from './styles';
 
 interface AccommodationsCardProps {
   image: string;
@@ -14,17 +14,17 @@ interface AccommodationsCardProps {
 
 export default function AccommodationsCard(props: AccommodationsCardProps) {
   return (
-    <div className="card">
+    <CardWrapper>
       <img src={props.image} alt="" />
-      <div className="bottom-card-container">
+      <BottomCardWrapper>
         <h1>{props.title}</h1>
         <span>{props.text}</span>
-        <div className="buttons-container">
+        <ButtonsWrapper>
           <button>R${props.value}</button>
           <Link to={props.link}>saiba mais</Link>
           <button>{props.stars} ✩</button>
-        </div>
-      </div>
-    </div>
+        </ButtonsWrapper>
+      </BottomCardWrapper>
+    </CardWrapper>
   );
 }

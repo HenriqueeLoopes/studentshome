@@ -5,6 +5,17 @@ import Header from "../../components/Header";
 
 import "./styles.css";
 
+import {
+  FiltersContainer,
+  ImgWrapper,
+  MainWrapper,
+  DropdownContainer,
+  DropdownButton,
+  FiltersButton,
+  PriceSlider,
+  CardsWrapper,
+} from "./style";
+
 import AccommodationsCard from "../../components/AccommodationsCard";
 
 import accommodationsImg from "../../assets/images/hospedagens.png";
@@ -21,50 +32,48 @@ export default function Accommodations() {
   return (
     <>
       <Header />
-      <div className="img-container">
+      <ImgWrapper>
         <img src={accommodationsImg} alt="Accommodations" />
-      </div>
-      <main>
-        <div className="filters-container">
-          <button>
+      </ImgWrapper>
+      <MainWrapper>
+        <FiltersContainer>
+          <FiltersButton>
             Tipos de Hospedagens ▼
-            <div className="dropdown-container">
-              <button>Republica</button>
-              <button>Hotel</button>
-              <button>Quarto</button>
-              <button>Casa</button>
-            </div>
-          </button>
-          <button>
+            <DropdownContainer>
+              <DropdownButton>Republica</DropdownButton>
+              <DropdownButton>Hotel</DropdownButton>
+              <DropdownButton>Quarto</DropdownButton>
+              <DropdownButton>Casa</DropdownButton>
+            </DropdownContainer>
+          </FiltersButton>
+          <FiltersButton>
             Estados ▼
-            <div className="dropdown-container">
-              <button>SP</button>
-              <button>RJ</button>
-              <button>BH</button>
-              <button>MG</button>
-            </div>
-          </button>
-          <button>
+            <DropdownContainer>
+              <DropdownButton>SP</DropdownButton>
+              <DropdownButton>RJ</DropdownButton>
+              <DropdownButton>BH</DropdownButton>
+              <DropdownButton>MG</DropdownButton>
+            </DropdownContainer>
+          </FiltersButton>
+          <FiltersButton>
             Avaliacao ▼{" "}
-            <div className="dropdown-container">
-              <button>5 ✩</button>
-              <button>4 ✩</button>
-              <button>3 ✩</button>
-              <button>2 ✩</button>
-              <button>0/1 ✩</button>
-            </div>
-          </button>
-          <button>
+            <DropdownContainer>
+              <DropdownButton>5 ✩</DropdownButton>
+              <DropdownButton>4 ✩</DropdownButton>
+              <DropdownButton>3 ✩</DropdownButton>
+              <DropdownButton>2 ✩</DropdownButton>
+              <DropdownButton>0/1 ✩</DropdownButton>
+            </DropdownContainer>
+          </FiltersButton>
+          <FiltersButton>
             Classificar ▼
-            <div className="dropdown-container">
-              <button>Maior Preco</button>
-              <button>Menor Preco</button>
-              <button>Melhor Avaliacao</button>
-              <button>Pior Avaliacao</button>
-            </div>
-          </button>
+            <DropdownContainer>
+              <DropdownButton>Maior Preco</DropdownButton>
+              <DropdownButton>Menor Preco</DropdownButton>
+            </DropdownContainer>
+          </FiltersButton>
           <span>Faixa Preco:</span>
-          <input
+          <PriceSlider
             type="range"
             min={0}
             max={4000}
@@ -75,7 +84,7 @@ export default function Accommodations() {
             id="price-slider"
           />
           <span>R$ {priceSlider}</span>
-        </div>
+        </FiltersContainer>
 
         <div className="mobile-filters">
           <button
@@ -95,7 +104,7 @@ export default function Accommodations() {
           )}
         </div>
 
-        <div className="cards-container">
+        <CardsWrapper>
           <AccommodationsCard
             image={republicaufabcsbc}
             title="Republica UFABC - SBC"
@@ -136,8 +145,8 @@ export default function Accommodations() {
             stars={3}
             link=""
           />
-        </div>
-      </main>
+        </CardsWrapper>
+      </MainWrapper>
       <Footer />
     </>
   );
