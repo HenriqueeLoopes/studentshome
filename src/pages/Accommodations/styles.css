@@ -97,3 +97,9 @@ main .filters-container span {
   padding: 3rem 0;
   padding-bottom: 4rem;
 }
+
+@media (max-width: 900px){
+    .cards-container {
+        max-width: 95%;
+    }
+}

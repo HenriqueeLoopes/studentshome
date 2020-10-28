@@ -121,14 +121,3 @@ header .hamburger-menu .hamburger-item {
     display: inline-block;
   }
 }
-
-@media (max-width: 700px){
-  header {
-    height: 3.5rem;
-  }
-  header img {
-    height: 2.5rem;
-    width: 7rem;
-    margin-right: 1rem;
-  }
-}
