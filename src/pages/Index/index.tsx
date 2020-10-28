@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from 'react-router-dom';
 
 import Footer from "../../components/Footer";
@@ -7,6 +7,10 @@ import Header from "../../components/Header";
 import "./styles.css";
 
 export default function Index() {
+  useEffect(() => {
+    document.title = 'Student`s Home';
+  }, []);
+
   return (
     <>
       <Header />
