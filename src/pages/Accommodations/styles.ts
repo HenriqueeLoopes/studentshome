@@ -50,6 +50,10 @@ export const FiltersContainer = styled.div`
 
     position: relative;
   }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const DropdownContainer = styled.div`
@@ -106,4 +110,39 @@ export const CardsWrapper = styled.div`
   max-width: 90vw;
   height: inherit;
   padding-bottom: 4rem;
+`;
+
+export const MobileFiltersWrapper = styled.div`
+  padding: 2rem 0;
+  width: 100vw;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+
+  button {
+    border: 0;
+    background-color: transparent;
+  }
+
+  @media (max-width: 600px) {
+    display: flex;
+  }
+`;
+
+export const MobileFiltersMainDropdown = styled.div`
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 1rem;
+
+  button {
+    border: 0;
+
+    width: inherit;
+    padding: 1rem 2rem;
+  }
 `;

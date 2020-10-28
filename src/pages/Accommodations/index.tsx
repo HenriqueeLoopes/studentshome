@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
-import "./styles.css";
-
 import {
   FiltersContainer,
   ImgWrapper,
@@ -14,7 +12,9 @@ import {
   FiltersButton,
   PriceSlider,
   CardsWrapper,
-} from "./style";
+  MobileFiltersWrapper,
+  MobileFiltersMainDropdown,
+} from "./styles";
 
 import AccommodationsCard from "../../components/AccommodationsCard";
 
@@ -86,7 +86,7 @@ export default function Accommodations() {
           <span>R$ {priceSlider}</span>
         </FiltersContainer>
 
-        <div className="mobile-filters">
+        <MobileFiltersWrapper>
           <button
             onClick={() => {
               setShowMobileFilters(!showMobileFilters);
@@ -95,14 +95,14 @@ export default function Accommodations() {
             Filtros ▼
           </button>
           {showMobileFilters && (
-            <div className="mobile-filters-main-dropdown">
+            <MobileFiltersMainDropdown>
               <button>Tipos de hospedagens ▼</button>
               <button>Estados ▼</button>
               <button>Avaliacao ▼</button>
               <button>Classificar ▼</button>
-            </div>
+            </MobileFiltersMainDropdown>
           )}
-        </div>
+        </MobileFiltersWrapper>
 
         <CardsWrapper>
           <AccommodationsCard
