@@ -28,7 +28,7 @@ export default function Header() {
           <Link to="/login">Login/Cadastrar</Link>
         </div>
 
-        <button onClick={() => setHamburgerMenu(!hambugerMenu)} className="hamburger-menu">
+        <button onClick={() => setHamburgerMenu(!hambugerMenu)} aria-label="HamburgerMenu Button" className="hamburger-menu">
           <div className="hamburger-item"></div>
           <div className="hamburger-item"></div>
           <div className="hamburger-item"></div>

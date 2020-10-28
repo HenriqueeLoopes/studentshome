@@ -15,9 +15,9 @@ export default function Footer() {
       <img src={logoImg} alt="Student`s Home Logo" />
 
       <div className="social-networks">
-          <a href="https://www.instagram.com/studentshome_/" target="_blank" rel="noopener noreferrer"><img src={instagramIcon} alt="Instagram Icon"/></a>
-          <a href="https://twitter.com/studentshome2" target="_blank" rel="noopener noreferrer"><img src={twitterIcon} alt="Twitter Icon"/></a>
-          <Link to="/"><img src={facebookIcon} alt="Facebook Icon"/></Link>
+          <a href="https://www.instagram.com/studentshome_/" target="_blank" rel="noopener noreferrer" aria-label="Student`s Home Instagram"><img src={instagramIcon} alt="Instagram Icon"/></a>
+          <a href="https://twitter.com/studentshome2" target="_blank" rel="noopener noreferrer" aria-label="Student`s Home Twitter"><img src={twitterIcon} alt="Twitter Icon"/></a>
+          <Link to="/"><img src={facebookIcon} alt="Facebook Icon" aria-label="Student`s Home Facebook"/></Link>
       </div>
 
       <span>Student's Home © - 2020 - Remasterized</span>
