@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import "./styles.css";
+import {
+  HambugerMenuItensWrapper,
+  HamburgerMenuItem,
+  HamburgerMenuWrapper,
+  LeftWrapper,
+  LinksWrapper,
+  LoginButton,
+  Wrapper,
+} from "./styles";
 
 import logoImg from "../../assets/images/logo.png";
 
@@ -10,39 +18,42 @@ export default function Header() {
 
   return (
     <>
-      <header>
-        <div className="left-container">
+      <Wrapper>
+        <LeftWrapper>
           <Link to="/">
             <img src={logoImg} alt="Student`s Home Logo" />
           </Link>
 
-          <div className="itens-container">
+          <LinksWrapper>
             <Link to="/accommodations">Hospedagens</Link>
             <Link to="/company">Quem Somos</Link>
             <Link to="/faq">FAQ</Link>
             <Link to="/partners">Parceiros</Link>
             <Link to="/contact">Fale Conosco</Link>
-          </div>
-        </div>
-        <div className="right-container">
-          <Link to="/login">Login/Cadastrar</Link>
-        </div>
+          </LinksWrapper>
+        </LeftWrapper>
 
-        <button onClick={() => setHamburgerMenu(!hambugerMenu)} aria-label="HamburgerMenu Button" className="hamburger-menu">
-          <div className="hamburger-item"></div>
-          <div className="hamburger-item"></div>
-          <div className="hamburger-item"></div>
-        </button>
-      </header>
+        <LoginButton to="/login">Login/Cadastrar</LoginButton>
+
+        <HamburgerMenuWrapper
+          onClick={() => setHamburgerMenu(!hambugerMenu)}
+          aria-label="HamburgerMenu Button"
+          className="hamburger-menu"
+        >
+          <HamburgerMenuItem />
+          <HamburgerMenuItem />
+          <HamburgerMenuItem />
+        </HamburgerMenuWrapper>
+      </Wrapper>
 
       {hambugerMenu && (
-        <div className="hamburger-container-itens">
+        <HambugerMenuItensWrapper>
           <Link to="/accommodations">Hospedagens</Link>
           <Link to="/company">Quem Somos</Link>
           <Link to="/faq">FAQ</Link>
           <Link to="/partners">Parceiros</Link>
           <Link to="/contact">Fale Conosco</Link>
-        </div>
+        </HambugerMenuItensWrapper>
       )}
     </>
   );
