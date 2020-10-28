@@ -50,3 +50,18 @@ header .itens-container a:hover {
 header .itens-container a:active {
   color: #000;
 }
+
+header .right-container a {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color ease-in-out 0.2s;
+}
+
+header .right-container a:hover {
+  color: rgba(0, 0, 0, 0.7);
+  background-color: #e2e6ea;
+}
+
+header .right-container a:active {
+  color: #000;
+}

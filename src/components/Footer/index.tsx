@@ -5,9 +5,9 @@ import "./styles.css";
 
 import logoImg from "../../assets/images/logo.png";
 
-import instagramIcon from '../../assets/instagram-icon.svg';
 import facebookIcon from '../../assets/facebook-icon.svg';
 import twitterIcon from '../../assets/twitter-icon.svg';
+import instagramIcon from '../../assets/instagram-icon.svg';
 
 export default function Footer() {
   return (

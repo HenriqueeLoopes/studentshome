@@ -19,7 +19,9 @@ export default function Header() {
             <Link to="/contact">Fale Conosco</Link>
         </div>
       </div>
-      <div className="right-container">Login/Cadastrar</div>
+      <div className="right-container">
+        <Link to="/login">Login/Cadastrar</Link>
+      </div>
     </header>
   );
 }
