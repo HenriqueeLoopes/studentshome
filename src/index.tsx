@@ -16,11 +16,11 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={App} />
-        <Route path="/accommodations" exact component={Accommodations} />
-        <Route path="/company" exact component={Company} />
-        <Route path="/faq" exact component={FAQ} />
-        <Route path="/partners" exact component={Partners} />
-        <Route path="/contact" exact component={Contact} />
+        <Route path="/accommodations" component={Accommodations} />
+        <Route path="/company" component={Company} />
+        <Route path="/faq" component={FAQ} />
+        <Route path="/partners" component={Partners} />
+        <Route path="/contact" component={Contact} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,
