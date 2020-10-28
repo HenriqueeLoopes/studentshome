@@ -75,6 +75,17 @@ export default function Accommodations() {
           />
           <span>R$ {priceSlider}</span>
         </div>
+
+            <div className="mobile-filters">
+              <button>Filtros ▼</button>
+              <div className="mobile-filters-main-dropdown">
+                    <button>Tipos de hospedagens ▼</button>
+                    <button>Estados ▼</button>
+                    <button>Avaliacao ▼</button>
+                    <button>Classificar ▼</button>
+              </div>
+            </div>
+
         <div className="cards-container">
           <AccommodationsCard
             image={republicaufabcsbc}
