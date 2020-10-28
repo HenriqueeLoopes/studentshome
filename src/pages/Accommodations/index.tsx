@@ -12,6 +12,7 @@ import republicaufabcsbc from "../../assets/images/hospedagens/republica-ufabc-s
 
 export default function Accommodations() {
   const [priceSlider, setPriceSlider] = useState(150);
+  const [showMobileFilters, setShowMobileFilters] = useState(false);
 
   useEffect(() => {
     document.title = "Student`s Home - Hospedagens";
@@ -76,15 +77,23 @@ export default function Accommodations() {
           <span>R$ {priceSlider}</span>
         </div>
 
-            <div className="mobile-filters">
-              <button>Filtros ▼</button>
-              <div className="mobile-filters-main-dropdown">
-                    <button>Tipos de hospedagens ▼</button>
-                    <button>Estados ▼</button>
-                    <button>Avaliacao ▼</button>
-                    <button>Classificar ▼</button>
-              </div>
+        <div className="mobile-filters">
+          <button
+            onClick={() => {
+              setShowMobileFilters(!showMobileFilters);
+            }}
+          >
+            Filtros ▼
+          </button>
+          {showMobileFilters && (
+            <div className="mobile-filters-main-dropdown">
+              <button>Tipos de hospedagens ▼</button>
+              <button>Estados ▼</button>
+              <button>Avaliacao ▼</button>
+              <button>Classificar ▼</button>
             </div>
+          )}
+        </div>
 
         <div className="cards-container">
           <AccommodationsCard
