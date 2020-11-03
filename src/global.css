@@ -16,7 +16,7 @@ body,
 }
 
 html, body {
-  background-image: url("./assets/background.jpg");
+  background-image: url("./assets/background.webp");
   background-size: cover;
 }
 
